@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rishiuniverse – Browse, discover, and copy the most viral AI image prompts. Trending prompts for Midjourney, DALL·E, Stable Diffusion, and more." />
+  <meta name="keywords" content="AI prompts, image prompts, Midjourney prompts, DALL-E prompts, stable diffusion, viral AI art" />
+  <meta property="og:title" content="Rishiuniverse – Viral AI Image Prompts" />
+  <meta property="og:description" content="Discover and copy the best AI image generation prompts instantly." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <title>Rishiuniverse – Viral AI Image Prompts</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="Rishiuniverse Home">
+        <img src="logo.png" alt="Rishiuniverse Logo" class="logo-img" onerror="this.src='https://via.placeholder.com/48'" />
+        <span class="logo-text">Rishiuniverse</span>
+      </a>
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search prompts..." aria-label="Search" />
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Discover <span style="color: var(--accent-pink)" id="heroCount">0</span>+ Viral AI Prompts</h1>
+      <p>The ultimate library of trending text-to-image prompts. Find the perfect prompt, copy it instantly, and create stunning AI art.</p>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-value" id="statTotal">0</div>
+        <div class="stat-label">Total Items</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value" id="statTrending">0</div>
+        <div class="stat-label">Trending Now</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label">Updated</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">Free</div>
+        <div class="stat-label">To Use</div>
+      </div>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="section" style="padding-bottom: 0;">
+      <div class="filter-tabs" id="filterTabs" role="tablist" aria-label="Filter by type">
+        <button role="tab" class="filter-tab active" data-tab="Prompts">Prompts</button>
+        <button role="tab" class="filter-tab" data-tab="Affiliates">Affiliates</button>
+        <button role="tab" class="filter-tab" data-tab="Jobs">Jobs</button>
+      </div>
+    </div>
+
+    <!-- Trending Section -->
+    <section class="section" id="trendingSection" aria-labelledby="trending-heading">
+      <div class="section-header">
+        <h2 class="section-title" id="trending-heading">🔥 Trending <span class="activeTabName">Prompts</span></h2>
+        <div class="section-divider"></div>
+        <span class="section-count" id="trendingCount">0 items</span>
+      </div>
+      <div class="grid grid-featured" id="trendingGrid">
+        <!-- Cards will be injected here -->
+      </div>
+    </section>
+
+    <!-- Latest / Search Results Section -->
+    <section class="section" id="latestSection" aria-labelledby="latest-heading">
+      <div class="section-header">
+        <h2 class="section-title" id="latestHeadingText">✨ Latest <span class="activeTabName">Prompts</span></h2>
+        <div class="section-divider"></div>
+        <span class="section-count" id="latestCount">0 items</span>
+      </div>
+      <div class="grid" id="latestGrid">
+        <!-- Cards will be injected here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      Made with ❤️ by <a href="https://rishiuniverse.com">Rishiuniverse</a> &nbsp;·&nbsp;
+      AI prompts updated daily &nbsp;·&nbsp;
+      <a href="mailto:hello@rishiuniverse.com">Contact</a>
+    </p>
+    <p style="margin-top: 8px; color: var(--text-muted)">
+      &copy; <span id="year"></span> Rishiuniverse. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
